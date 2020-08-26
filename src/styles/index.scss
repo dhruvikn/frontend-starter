@@ -1,6 +1,5 @@
-$body-color: slateblue;
-
-body {
-  color: $body-color;
-  font-family: sans-serif;
-}
+@import "fonts";
+@import "variables";
+@import "helpers";
+@import "mixins";
+@import "style";

@@ -1,0 +1,44 @@
+@mixin flexCenter($direction: 'both', $isInline: false) {
+    @if $isInline {
+        display: inline-flex;
+    } @else {
+        display: flex;
+    }
+
+    @if $direction == 'x' {
+        align-items: center;
+    } @else if $direction == 'y' {
+        justify-content: center;
+    } @else {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@mixin customScrollbar($thumbColor: $primary, $trackColor: $white, $width: 8px) {
+    &::-webkit-scrollbar {
+        width: $width;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $trackColor;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $thumbColor;
+
+        &:hover {
+            background: darken($thumbColor, 15%);
+        }
+    }
+}
+
+@mixin customSelection($color: $primary) {
+    -moz-selection {
+        background-color: $color
+    }
+
+    ::selection {
+        background-color: $color
+    }
+}

@@ -1,9 +1,10 @@
-# Webpack Frontend Starterkit
+# Frontend Starter
 
-[![Dependabot badge](https://flat.badgen.net/dependabot/wbkd/webpack-starter?icon=dependabot)](https://dependabot.com/)
+A foundation for non-reactive Frontend Projects.
 
-A lightweight foundation for your next webpack based frontend project.
-
+### What's different from [Webpack Frontend Starterkit](https://github.com/wbkd/webpack-starter)?
+* Added SASS partials with initial values (variables, fonts, helpers, mixins)
+* Setup foundation styles
 
 ### Installation
 

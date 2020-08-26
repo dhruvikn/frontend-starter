@@ -1,0 +1,40 @@
+// Bg Helpers
+.bg-primary {
+    background-color: $primary !important;
+}
+
+.bg-secondary {
+    background-color: $secondary !important;
+}
+
+
+// Color Helpers
+.text-primary {
+    color: $primary !important;
+}
+
+.text-secondary {
+    color: $secondary !important;
+}
+
+// Font Weights
+.fw-normal {
+    font-weight: $weightNormal !important;
+}
+
+.fw-bold {
+    font-weight: $weightBold !important;
+}
+
+// Other
+.pointer {
+    cursor: pointer !important;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden !important;
+}
+
+.overflow-y-hidden {
+    overflow-x: hidden !important;
+}

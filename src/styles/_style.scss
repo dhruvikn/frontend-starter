@@ -1,0 +1,30 @@
+body {
+    background-color: $secondary;
+    color: $white;
+    font-family: $familyPrimary;
+    height: 150vh;
+}
+
+a {
+    color: $white;
+    transition: $standardTransition;
+
+    &:hover {
+        color: darken($white, 25%);
+    }
+}
+
+main {
+    text-align: center;
+    height: 90vh;
+    @include flexCenter();
+
+    h1 {
+        color: $primary;
+        font-family: $familySecondary;
+        font-weight: $weightBold;
+    }
+}
+
+@include customSelection($primary);
+@include customScrollbar;
