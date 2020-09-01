@@ -6,9 +6,9 @@
     }
 
     @if $direction == 'x' {
-        align-items: center;
-    } @else if $direction == 'y' {
         justify-content: center;
+    } @else if $direction == 'y' {
+        align-items: center;
     } @else {
         align-items: center;
         justify-content: center;
@@ -40,5 +40,46 @@
 
     ::selection {
         background-color: $color
+    }
+}
+
+@mixin placeholderColor($color) {
+    &[placeholder]::-webkit-input-placeholder {
+        color: rgba($color, .42);
+        transition: $standardTransition;
+    }
+
+    &[placeholder]:hover::-webkit-input-placeholder {
+        color: rgba($color, .25);
+    }
+
+    &[placeholder]:focus::-webkit-input-placeholder {
+        color: rgba($color, .25);
+    }
+
+    &[placeholder]::-moz-placeholder {
+        color: rgba($color, .42);
+        transition: $standardTransition;
+    }
+
+    &[placeholder]:hover::-moz-placeholder {
+        color: rgba($color, .25);
+    }
+
+    &[placeholder]:focus::-moz-placeholder {
+        color: rgba($color, .25);
+    }
+
+    &[placeholder]:-ms-input-placeholder {
+        color: rgba($color, .42);
+        transition: $standardTransition;
+    }
+
+    &[placeholder]:hover:-ms-input-placeholder {
+        color: rgba($color, .25);
+    }
+
+    &[placeholder]:focus:-ms-input-placeholder {
+        color: rgba($color, .25);
     }
 }
