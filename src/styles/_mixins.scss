@@ -35,51 +35,56 @@
 
 @mixin customSelection($color: $primary) {
     -moz-selection {
-        background-color: $color
+        background-color: $color;
     }
 
     ::selection {
-        background-color: $color
+        background-color: $color;
     }
 }
 
-@mixin placeholderColor($color) {
+@mixin customPlaceholder(
+    $color: #000,
+    $defaultOpacity: 0.4,
+    $hoverOpacity: 0.25,
+    $focusOpacity: 0.25
+) {
     &[placeholder]::-webkit-input-placeholder {
-        color: rgba($color, .42);
+        color: rgba($color, $defaultOpacity);
         transition: $standardTransition;
     }
 
     &[placeholder]:hover::-webkit-input-placeholder {
-        color: rgba($color, .25);
+        color: rgba($color, $hoverOpacity);
     }
 
     &[placeholder]:focus::-webkit-input-placeholder {
-        color: rgba($color, .25);
+        color: rgba($color, $focusOpacity);
     }
 
     &[placeholder]::-moz-placeholder {
-        color: rgba($color, .42);
+        color: rgba($color, $defaultOpacity);
         transition: $standardTransition;
     }
 
     &[placeholder]:hover::-moz-placeholder {
-        color: rgba($color, .25);
+        color: rgba($color, $hoverOpacity);
     }
 
     &[placeholder]:focus::-moz-placeholder {
-        color: rgba($color, .25);
+        color: rgba($color, $focusOpacity);
     }
 
     &[placeholder]:-ms-input-placeholder {
-        color: rgba($color, .42);
+        color: rgba($color, $defaultOpacity);
         transition: $standardTransition;
     }
 
     &[placeholder]:hover:-ms-input-placeholder {
-        color: rgba($color, .25);
+        color: rgba($color, 0.25);
     }
 
     &[placeholder]:focus:-ms-input-placeholder {
-        color: rgba($color, .25);
+        color: rgba($color, 0.25);
     }
 }

@@ -1,5 +1,6 @@
 import '../styles/index.scss';
 
 if (process.env.NODE_ENV === 'development') {
-  require('../index.html');
+    // eslint-disable-next-line global-require
+    require('../index.html');
 }
