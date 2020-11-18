@@ -1,6 +1,7 @@
+
 # Frontend Starter
 
-A foundation for non-reactive Frontend Projects.
+A foundation for non-reactive Frontend Projects. [Use this template.](https://github.com/dhruvikn/frontend-starter)
 
 ### What's different from [Webpack Frontend Starterkit](https://github.com/wbkd/webpack-starter)?
 
